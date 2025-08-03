@@ -1,0 +1,380 @@
+/* BASE STYLING */
+body {
+  margin: 0;
+  background-color: #fef7f8;
+  color: #4a3a3a;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: #d4aab4;
+  padding: 5px 40px;
+  position: relative;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 20;
+}
+
+.navbar li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar li:hover {
+  color: #ffdee5;
+}
+
+.phone {
+  font-weight: bold;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  min-height: 450px;
+  background-color: #d4aab4;
+  color: white;
+}
+
+
+
+/* Container for h1 + ispod.png */
+.hero-left {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  text-align: left;
+  margin-top: 100px;
+}
+.hero-left p {
+  font-size: 30px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+
+
+.hero-left button {
+  background-color: white;
+  color: #a75c7b;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  max-width: max-content;
+  font-size: 20px;
+}
+.hero-left button:hover {
+  background-color: #f3e2e6;
+}
+/* RIGHT SIDE: H1 + small image + big image */
+.hero-right {
+  flex: 1 1 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+.text-and-small {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.her {
+  display: flex;
+  align-items: stretch; /* makes children match the height of the tallest one */
+  height: 30vh; /* or adjust to your header height */
+  margin-right: 600px;
+  margin-top: 20px;
+}
+
+.hero-lef {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  flex: 1;
+}
+
+.hero-lef h1 {
+  font-family: 'Dancing Script', 'Caveat', cursive;
+  font-size: 80px;
+  margin: 0;
+  margin-left: 80px;
+}
+
+.small-image {
+  width: 430px;
+  margin-top: -30px;
+  object-fit: contain;
+}
+
+.hero-right {
+  flex-shrink: 0;
+}
+
+.slika {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 0 10px 10px 0;
+}
+
+/* NOVINKI SECTION */
+.novinki {
+  background-color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.novinki h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.bouquets {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.bouquet img {
+  width: 290px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+.bouquet p {
+  font-size: 16px;
+}
+
+.see-all {
+  margin-top: 20px;
+  background-color: #c9a3ab;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.see-all:hover {
+  background-color: #b38892;
+}
+
+/* ABOUT SECTION */
+.about {
+  background-color: #e6c7cf;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0; /* ← dodaj ovo ako nema */
+}
+
+.about-text {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-img img {
+  width: 300px;
+ 
+  border-radius: 10px;
+  margin: 20px;
+}
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 0; /* MANJE PADDINGA = MANJI FOOTER */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.info-box {
+  text-align: center;
+  max-width: 250px;
+  margin: 20px;
+   font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #7a4661;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;  
+}
+
+.info-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.info-box h3 :hover{
+      color: #f1bbd6;
+}
+.info-box h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+
+}
+
+.info-box p {
+     font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  color: #7a4661;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;  
+  
+}
+footer {
+  background-color: rgba(255, 239, 241, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 182, 193, 0.4);
+}
+
+.section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.product {
+  width: 260px; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.product img {
+  width: 100%;
+ height: 220px; /* veća slika */
+  object-fit: cover;
+}
+
+.product .info {
+  padding: 0.5rem 1rem;
+}
+
+.product h3 {
+  font-size: 16px;
+  margin: 0 0 4px 0;
+}
+
+.product p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.product button {
+  background-color: #d4aab4 ;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* DESKTOP PRIKAZ: 769px i šire */
+@media (min-width: 769px) {
+  .products {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .product {
+    width: 260px;
+  }
+
+  .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+ .hero-left {
+  flex: 1;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .about {
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .info-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
